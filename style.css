@@ -1,0 +1,130 @@
+/* super basics */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* basic layout helpers */
+.section {
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding: 70px;
+}
+.intermission {
+    padding: 70px;
+    text-align: center;
+    background: #181818;
+    color: white;
+    -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.dt {
+    display: table;
+}
+.dtc {
+    display: table-cell;
+}
+.dt, .dtc {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.dt.center .dtc.left > div,
+.dt.center .dtc.right > div {
+    width: 50%;
+}
+.dt.center .dtc.right > div {
+    float: right;
+}
+
+/* text styling */
+html, body {
+    font-family: "Calibri Light", Arial, sans-serif;
+    color: #181818;
+    font-weight: 100;
+}
+h1 {
+    margin: 0;
+    font-size: 146px;
+    color: white;
+    -webkit-text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+    -ms-text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+    -o-text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    font-size: 28px;
+    margin: 0 auto 40px auto;
+    max-width: 600px;
+    font-weight: 700;
+}
+p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.section p.large {
+    font-size: 48px;
+}
+.section h2 {
+    text-transform: uppercase;
+}
+.section p {
+    font-size: 22px;
+}
+.section p,
+.section h2 {
+    color: white;
+        -webkit-text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        -moz-text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        -ms-text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        -o-text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.intermission h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+.intermission p {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* buttons */
+a.cta {
+    display: inline-block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+
+    border: 3px solid white;
+    color: white;
+
+    -webkit-transition: all ease .25s;
+    -moz-transition: all ease .25s;
+    -ms-transition: all ease .25s;
+    -o-transition: all ease .25s;
+    transition: all ease .25s;
+}
+
+a.cta:hover, a.cta:active, a.cta:focus {
+    background: white;
+    color: #181818;
+}
